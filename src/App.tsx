@@ -1,9 +1,12 @@
 import "./App.css";
+import { TokenLaunchpad } from "./components/TokenLaunchpad";
 
 function App() {
   return (
     <>
-      <div>helloooooo</div>
+      <div>
+        <TokenLaunchpad />
+      </div>
     </>
   );
 }
