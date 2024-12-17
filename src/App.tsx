@@ -4,7 +4,7 @@ import { TokenLaunchpad } from "./components/TokenLaunchpad";
 function App() {
   return (
     <>
-      <div>
+      <div className="h-screen bg-zinc-800">
         <TokenLaunchpad />
       </div>
     </>
