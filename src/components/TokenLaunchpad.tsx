@@ -25,11 +25,11 @@ export function TokenLaunchpad() {
   const { connection } = useConnection();
   const wallet = useWallet();
 
-  if (!wallet || !wallet.publicKey) {
-    return;
-  }
-
   async function createToken() {
+    if (!wallet || !wallet.publicKey) {
+      return;
+    }
+
     const mintKeypair = Keypair.generate();
 
     const name = nameRef.current;
